@@ -3,7 +3,7 @@ import { Route, Routes, HashRouter } from 'react-router-dom'
 
 //Page
 import Home from "./page/Home/home.jsx"
-import About from './page/About/about.jsx'
+import About from './page/about/about.jsx'
 import Contact from './page/contact/contact.jsx'
 import NoPage from './page/404/nopage.jsx'
 import Fontpage from './page/fontPage/fontpage.jsx'

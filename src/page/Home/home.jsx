@@ -94,8 +94,8 @@ function Home(props){
             {/* Editor tools Container */}
             <div className={Styles.font_edit_con} id='editCon'>
                {/* Close Button */}
-               <button onClick={closeEditorMainFunc} className={Styles.close_editor_btn}>
-                  <img className={Styles.close_editor_img} src={closeDown} alt="" />
+               <button onClick={closeEditorMainFunc} className={`${Styles.close_editor_btn} ${Styles.non_cpv}`}>
+                  <img className={`${Styles.close_editor_img} ${Styles.non_cpv}`} src={closeDown} alt="" />
                </button>
                
                {/* Main editor   |   Top Edit tools*/}
@@ -103,18 +103,18 @@ function Home(props){
                   <div className={Styles.selector_box}>
                      <span className={Styles.pick_font_label}>Pick Font</span>
                      
-                     <div onClick={() => openFontLists()} id='non' className={Styles.select_con}>
-                        <div className={Styles.font_lists} id='fonts'>
+                     <div onClick={() => openFontLists()} id='non' className={`${Styles.select_con} ${Styles.non_cpv}`}>
+                        <div className={`${Styles.font_lists} ${Styles.non_cpv}`} id='fonts'>
                            {homeFonts.map((font, i) => { 
                               return <p onClick={(e)=> changeFont(e)} key={i} className={Styles.select_option_val}>{font.name}</p> 
                            })}
                         </div>
-                        <output>{font_family}</output>
+                        <output className={`${Styles.non_cpv}`}>{font_family}</output>
                      </div>
-                     <img onClick={() => openFontLists()} id='rot' className={Styles.option_down} src={closeDown} alt="" />
+                     <img onClick={() => openFontLists()} id='rot' className={`${Styles.option_down} ${Styles.non_cpv}`} src={closeDown} alt="" />
                   </div>
-                  <div onClick={() => drlmode()} className={Styles.switch_con}>
-                     <img className={Styles.light_switch} id='#s_gbstl_' src={switchPic} alt="" />
+                  <div onClick={() => drlmode()} className={`${Styles.switch_con} ${Styles.non_cpv}`}>
+                     <img className={`${Styles.light_switch} ${Styles.non_cpv}`}id='#s_gbstl_' src={switchPic} alt="" />
                   </div>
                </div>
                {/* Bot Edit tools */}
