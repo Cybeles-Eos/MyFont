@@ -3,6 +3,7 @@ import fImage from '../../assets/F.png'
 import Fontbox from '../../components/fontbox/fontbox.jsx'
 import { useState } from 'react';
 
+
 import Footer from '../../components/footer/footer.jsx';
 
 function Fontpage(props){
@@ -57,7 +58,7 @@ function Fontpage(props){
          fontstyle: 'chiltofont',
          numStyle: 1,
          fontCreator: 'Novel',
-         fontFile: '/FontFiles/Collections/chiltofont-1.zip'
+         fontFile: '../../../public/FontFiles/Collections/chiltofont-1.zip'
       },
       {
          fontname: 'SourceSerif',
