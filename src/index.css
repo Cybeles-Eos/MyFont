@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*collection*/
+@font-face {
+  font-family: 'Chilto';
+  src: url('/Fonts/Collections/chilto.otf');
+}
+@font-face {
+  font-family: 'SourceSerif';
+  src: url('/Fonts/Collections/SourceSerif.ttf');
+}
+@font-face {
+  font-family: 'Musashi';
+  src: url('/Fonts/Collections/Musashi.ttf');
+}
+@font-face {
+  font-family: 'luxenage';
+  src: url('/Fonts/Collections/luxenage.otf');
+}
+@font-face {
+  font-family: 'balkor';
+  src: url('/Fonts/Collections/balkor.ttf');
+}
+
+/*popular*/
+@font-face {
+  font-family: 'GRANDSTAND';
+  src: url('/Fonts/PopuplarFonts/GRANDSTAND.ttf');
+}@font-face {
+  font-family: 'Haerins';
+  src: url('/Fonts/PopuplarFonts/Haerins.otf');
+}@font-face {
+  font-family: 'cheqa';
+  src: url('/Fonts/PopuplarFonts/cheqa.otf');
+}@font-face {
+  font-family: 'folkin';
+  src: url('/Fonts/PopuplarFonts/folkinregular-8mwxz.ttf');
+}@font-face {
+  font-family: 'BlizeQueen';
+  src: url('/Fonts/PopuplarFonts/BlizeQueen.otf');
+}@font-face {
+  font-family: 'Cosity';
+  src: url('/Fonts/PopuplarFonts/cosity.otf');
+}
+
+
+:root{
+  /*collection*/
+  --chilto: 'Chilto', 'Inter', sans-serif;
+  --sourceSerif: "SourceSerif", 'Inter', sans-serif;
+  --Musashi: "Musashi", 'Inter', sans-serif;
+  --luxenage: "luxenage", 'Inter', sans-serif;
+  --balkor: "balkor", "Inter", sans-serif;
+
+  /*popular*/
+  --grandstand: 'GRANDSTAND', 'Inter', sans-serif;
+  --haerins: 'Haerins', 'Inter', sans-serif;
+  --cheqa: 'cheqa', 'Inter', sans-serif;
+  --folkin: 'folkin', 'Inter', sans-serif;
+  --BlizeQueen: 'BlizeQueen', 'Inter', sans-serif;
+  --Cosity: 'Cosity', 'Inter', sans-serif;
+}
+
+:root {
+  --white: #FFF;
+  --semi-black: #1D1F21;
+  --inter: "Inter", serif;
+  --sblue: #428AE0;
+  --dblue: #266dc4;
+  --bg-blk: #0C0C0D;
+  --clr-hr: #F0F3F5;
+  --sky-neon: #96fffa;
+  --textcolor: #1C1C1A;
+
+  --faded-7: #9F9F9F;
+  --faded-3: #c0c0c0;
+
+  --font-wide-size: 0.85rem;
+  --font-small-size: 0.75rem;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--inter);
+  color: var(--semi-black);
+}
+
+body{
+  background-image: url(./assets/grid-line.svg); 
+  background-size: cover; 
+  background-position: center;
+}
+
+
+::-webkit-scrollbar{
+  width: 5px;
+  height: 6px;
+}
+::-webkit-scrollbar-track{
+  background-color: rgba(0, 0, 139, 0);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--sblue);
+  /* border-radius: 222px; */
+}
+
+
+/*For images*/
+#s_gbstl_{
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 600ms;
+}
+
+::selection {
+  background-color: var(--sky-neon); 
+  color: var(--bg-blk);
+  opacity: 1 !important;
+}

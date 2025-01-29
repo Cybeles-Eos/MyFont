@@ -1,0 +1,134 @@
+.foo{
+   max-width: 1840px;
+   margin: 0 auto;
+   height: 17rem;
+   background-color: var(--bg-blk);
+   display: flex;
+   flex-direction: column;
+   padding: 1rem 2rem;
+}
+
+.info{
+   height: 90%;
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+}
+.info > div {
+   padding-top: 3rem;
+   width: 400px;
+}
+.imgcon{
+   width: 250px !important;
+}
+
+.logo{
+   height: 2rem;
+   user-select: none;
+   position: relative;
+   -webkit-user-drag: none;
+   cursor: pointer;
+}
+.text {
+   max-width: 330px;
+   color: var(--white);
+   font-size: 13px;
+   font-weight: 300;
+   
+}
+.list{
+   margin-left: 3rem;
+}
+.list > li{
+   list-style: none;
+   margin-top: 3px;
+}
+.list > li > a{
+   text-decoration: none;
+   color: var(--white);
+   font-size: 14px;
+   font-weight: 300;
+   opacity: .5;
+}
+.list > li > a:hover{
+   opacity: 1;
+}
+
+
+.foo > hr {
+   height: .01rem;
+   background-color: var(--clr-hr);
+   margin-bottom: 14px;
+   opacity: .1;
+}
+
+.foo > p {
+   color: var(--white);
+   font-size: 12px;
+   font-weight: 300;
+}
+
+
+@media screen and (max-width: 620px) {
+   .foo{
+      height: auto;
+   }
+   .info{
+      flex-direction: column;
+   }
+   .imgcon{
+      width: 120px !important;
+   }
+   .info > div {
+      padding-top: 2rem;
+      width: auto;
+   }
+   
+   .list{
+      margin: .60rem 0rem;
+      
+   }
+   .list > li{
+      list-style: none;
+      margin-top: 5px;
+   }
+   .shrinksize{
+      padding-top: 1rem !important;
+      margin-bottom: 1rem;
+   }
+}
+
+
+
+@media screen and (max-width: 460px) {
+   .foo{
+      padding: 1rem 1.1rem;
+   }
+   .info{
+      display: flex;
+      flex-direction: column;
+   }
+   .info > div {
+      padding-top: 1rem;
+      width: auto;
+   }
+   .logo{
+      height: 1.9rem;
+      margin: 1rem 0 0 0;
+   }
+   .text {
+      font-size: 0.80rem;
+      margin-right: 1rem;
+   }
+   .list > li > a{
+      font-size: 0.80rem;
+   }
+   .shrinksize{
+      margin-bottom: 1rem;
+   }
+   .foo > p{
+      font-size: 12px;
+   }
+}
+
+

@@ -1,0 +1,103 @@
+.main{
+   max-width: 1300px;
+   margin: 0 auto;
+   height: 155vh;
+   display: flex;
+   padding: 4rem 3rem;
+   transform: translateY(4.5rem);
+   margin-bottom: 6.5rem;
+}
+
+.tbimgcon{
+   margin-left: 5rem;
+   display: flex;
+   justify-content: center;
+   align-items: self-start;
+   transition: all 1100ms;
+   height: max-content;
+}
+.tbtextcon{
+   margin-right: 3rem;
+   width: 1000px;
+}
+
+/*______*/
+.mTextStyl{
+   font-size: 1.3rem;
+   font-weight: 600;
+   margin-bottom: 1.7rem;
+}
+.sTextStyl{
+   font-size: 13px;
+   margin-bottom: 2rem;
+   line-height: 22px;
+  margin-right: 50px;
+}
+
+.listcon{
+   margin-left: 1.1rem;
+   margin-bottom: 3rem;
+}
+.listtexts{
+   font-size: 13px;
+   margin: 1rem 0;
+}
+
+.Aa{
+   width: 80%;
+}
+
+@media screen and (max-width: 912px) {
+   .tbimgcon{
+      margin-left: 1rem;
+   
+   }
+   .sTextStyl{
+     margin-right: 0px;
+   }
+   .Aa{
+      width: 80%;
+   }
+}
+
+@media screen and (max-width: 620px){
+   .main{
+      display: flex;
+      max-width: 1300px;
+      margin: 0 auto;
+      margin-bottom: 0 !important;
+      padding: 3.5rem 2rem;
+   }
+   
+  
+   .tbimgcon{
+      display: none;
+   }
+   .tbtextcon{
+      margin-right: 0rem;
+   }
+}
+
+@media screen and (max-width: 460px){
+   .main{
+      height: 130vh;
+   }
+   .main{
+      display: flex;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2.2rem 1.1rem;
+      padding-bottom: 0 !important;
+   }
+   .mTextStyl{
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 1.1rem;
+   }
+   .sTextStyl{
+      font-size: 13px;
+      margin-bottom: 2.1rem;
+      line-height: 22px;
+   }
+   
+}

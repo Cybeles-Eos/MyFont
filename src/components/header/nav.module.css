@@ -1,0 +1,131 @@
+
+
+[data-theme="dark"] {
+   --text-color: #FFF;
+}
+
+.navbox{
+   max-width: 1840px;
+   margin: 0 auto;
+   height: 4.5rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 1.4rem 0 1.1rem;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 10;
+}
+.logoBox{
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+   width: 7rem;
+}
+.logo{
+   width: 5.8rem;
+   position: relative;
+   -webkit-user-drag: none;
+   user-select: none;
+   z-index: 13;
+   -webkit-tap-highlight-color: transparent;
+}
+
+.navUl{
+   display: flex;
+   width: 22rem;
+   justify-content: space-between;
+}
+
+.navUl > li {
+   list-style: none;
+}
+
+.navUl > li > a{
+   text-decoration: none;
+   font-size: 0.85rem;
+   font-weight: 400;
+   user-select: none;
+   color: var(--text-color);
+
+}
+
+
+.menu{
+   width: 34px;
+   border: 1px solid var(--semi-black);
+   padding: 7px;
+   border-radius: 100%;
+   cursor: pointer;
+   display: none;
+   z-index: 2;
+   -webkit-user-drag: none;
+   user-select: none;
+   -webkit-tap-highlight-color: transparent;
+
+   background-color: #FFF;
+}
+.menu:hover{
+   box-shadow: -2px 2px 0 var(--semi-black);
+}
+.menu:active{
+   transform: translateX(-2px) translateY(2px);
+   box-shadow: none;
+}
+
+
+
+@media screen and (max-width: 620px) {
+   .show{
+      display: flex !important;
+   }
+   .menu{
+      display: block;
+      z-index: 12;
+   }
+   .navUl {
+      width: fit-content;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      right: 1.38rem;
+      top: 2.55rem;
+      padding: 1rem 0;
+      display: none; 
+   }
+
+   .navUl > li {
+      margin: .34rem 0;
+
+   }
+   .navUl > li > a{
+      display: block;
+      background-color: var(--white);
+      border: 1px solid var(--semi-black);
+      color: var(--semi-black);
+      border-radius: 200px;
+      width: 7.8rem;
+      height: 2.4rem;
+      text-align: right;
+      align-content: center;
+      padding-inline: 1rem;
+      
+   }
+   .navUl > li > a:hover{
+      color: var(--white);
+      border: none;
+      background-color: var(--sblue);
+      box-shadow: -3px 3px 0 var(--dblue);
+   }
+   .navUl > li > a:active{
+      transform: translateX(-3px) translateY(3px);
+      box-shadow: none;
+   }
+}
+@media screen and (max-width: 460px){
+   .navUl > li > a{
+      font-size: 0.75rem;
+   }
+}
