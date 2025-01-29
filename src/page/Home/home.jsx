@@ -95,7 +95,7 @@ function Home(props){
             <div className={Styles.font_edit_con} id='editCon'>
                {/* Close Button */}
                <button onClick={closeEditorMainFunc} className={Styles.close_editor_btn}>
-                  <img className={Styles.close_editor_img} src={closeDown} alt="" />
+                  <img className={Styles.close_editor_img} id='s_gbstl_' src={closeDown} alt="" />
                </button>
                
                {/* Main editor   |   Top Edit tools*/}

@@ -215,6 +215,8 @@
 }
 output{
    font-size: var(--font-wide-size);
+   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -232,6 +234,10 @@ output{
    user-select: none;
    cursor: pointer;
    rotate: var(--rot);
+
+   user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .con_selector_bottom{
    display: var(--display-div);

@@ -23,14 +23,18 @@
    display: inline-block;
    cursor: pointer;
    width: 7rem;
+
+   user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .logo{
    width: 5.8rem;
    position: relative;
-   -webkit-user-drag: none;
-   user-select: none;
+   -webkit-user-drag: none !important;
+   user-select: none !important;
    z-index: 13;
-   -webkit-tap-highlight-color: transparent;
+   -webkit-tap-highlight-color: transparent !important;
 }
 
 .navUl{
@@ -111,7 +115,10 @@
       text-align: right;
       align-content: center;
       padding-inline: 1rem;
-      
+
+      user-select: none;
+      -webkit-user-drag: none;
+      -webkit-tap-highlight-color: transparent;
    }
    .navUl > li > a:hover{
       color: var(--white);
@@ -127,5 +134,6 @@
 @media screen and (max-width: 460px){
    .navUl > li > a{
       font-size: 0.75rem;
+
    }
 }
