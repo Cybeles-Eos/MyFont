@@ -5,6 +5,7 @@
    margin: 0 auto;
    margin-bottom: 20vh;
    transform: translateY(4.5rem);
+   /* height: 120vh; */
 }
 
 .upper_page{
@@ -187,6 +188,7 @@
    }
 }
 @media screen and (max-width: 750px){
+  
    .popl_font_con{
       grid-template-columns: 1fr;
    }
@@ -248,6 +250,7 @@
 
 /*fontbox - mobile - size*/
 @media screen and (max-width: 460px){
+   
    .font_box{
       grid-template-columns: 1fr 150px;
    }

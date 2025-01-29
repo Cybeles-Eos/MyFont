@@ -1,7 +1,7 @@
 .main{
    max-width: 1300px;
    margin: 0 auto;
-   height: 155vh;
+   height: auto;
    display: flex;
    padding: 4rem 3rem;
    transform: translateY(4.5rem);
@@ -80,7 +80,10 @@
 
 @media screen and (max-width: 460px){
    .main{
-      height: 130vh;
+      /* height: 130vh; */
+      height: auto !important;
+      transform: translateY(0);
+      margin-top: 4.5rem;
    }
    .main{
       display: flex;
@@ -99,5 +102,8 @@
       margin-bottom: 2.1rem;
       line-height: 22px;
    }
-   
+   .tbtextcon{
+      margin-top: 4.5rem;
+      margin-bottom: 2rem;
+   }
 }

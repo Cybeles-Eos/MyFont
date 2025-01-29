@@ -49,8 +49,8 @@ function About(props){
                   enthusiasts to experiment with typography and bring ideas to life.
                </p>
 
-               {about_texts.map(abt_txt =>{
-                  return <Texts title={abt_txt.title} texts={abt_txt.texts}/>
+               {about_texts.map((abt_txt, i) =>{
+                  return <Texts key={i} title={abt_txt.title} texts={abt_txt.texts}/>
                })}
 
                <p className={Style.sTextStyl}> 
