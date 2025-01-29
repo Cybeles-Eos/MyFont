@@ -95,7 +95,7 @@ function Home(props){
             <div className={Styles.font_edit_con} id='editCon'>
                {/* Close Button */}
                <button onClick={closeEditorMainFunc} className={Styles.close_editor_btn}>
-                  <img className={Styles.close_editor_img} id='s_gbstl_' src={closeDown} alt="" />
+                  <img className={Styles.close_editor_img} src={closeDown} alt="" />
                </button>
                
                {/* Main editor   |   Top Edit tools*/}
@@ -103,7 +103,7 @@ function Home(props){
                   <div className={Styles.selector_box}>
                      <span className={Styles.pick_font_label}>Pick Font</span>
                      
-                     <div onClick={() => openFontLists()} className={Styles.select_con}>
+                     <div onClick={() => openFontLists()} id='non' className={Styles.select_con}>
                         <div className={Styles.font_lists} id='fonts'>
                            {homeFonts.map((font, i) => { 
                               return <p onClick={(e)=> changeFont(e)} key={i} className={Styles.select_option_val}>{font.name}</p> 

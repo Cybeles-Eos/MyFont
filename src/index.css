@@ -106,6 +106,12 @@ body{
   /* border-radius: 222px; */
 }
 
+#non{
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
 
 /*For images*/
 #s_gbstl_{
