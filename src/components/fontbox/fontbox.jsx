@@ -3,12 +3,19 @@ import downloadImage from '../../assets/download-cloud-line.svg'
 
 function Fontbox(props){
    const downloadThis = (source, name)=>{
-      const a = document.createElement('a')
-      a.href = source
-      a.download = name
-      document.body.appendChild(a)
-      a.click()
-      document.body.removeChild(a)
+      const a = document.createElement("a");
+      a.href = source;
+      a.setAttribute("download", name || "font.zip");
+      a.style.display = "none"; 
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      // const a = document.createElement('a')
+      // a.href = source
+      // a.download = name
+      // document.body.appendChild(a)
+      // a.click()
+      // document.body.removeChild(a)
    }
 
    return(

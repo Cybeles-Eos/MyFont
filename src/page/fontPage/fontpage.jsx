@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 import Footer from '../../components/footer/footer.jsx';
 
-function Fontpage(props){
+function Fontpage(){
    let [toggle, setToggle] = useState(true);
    const popularFont = [
       {
@@ -14,42 +14,42 @@ function Fontpage(props){
          fontstyle: 'grandstandfont',
          numStyle: 1,
          fontCreator: 'UICreative',
-         fontFile: '/FontFiles/PopularFontFiles/grandstand-1.zip'
+         fontFile: `${import.meta.env.BASE_URL}/FontFiles/PopularFontFiles/grandstand-1.zip`
       },
       {
          fontname: 'Haerins',
          fontstyle: 'Haerinsfont',
          numStyle: 1,
          fontCreator: 'Inksun™',
-         fontFile: '/FontFiles/PopularFontFiles/Haerins-1.zip'
+         fontFile: `${import.meta.env.BASE_URL}/FontFiles/PopularFontFiles/Haerins-1.zip`
       },
       {
          fontname: 'Cheqa',
          fontstyle: 'cheqafont',
          numStyle: 1,
          fontCreator: '',
-         fontFile: '/FontFiles/PopularFontFiles/cheqa-font-1.zip'
+         fontFile: `${import.meta.env.BASE_URL}/FontFiles/PopularFontFiles/cheqa-font-1.zip`
       },
       {
          fontname: 'Folkin',
          fontstyle: 'folkinfont',
          numStyle: 1,
          fontCreator: 'Inksun™',
-         fontFile: '/FontFiles/PopularFontFiles/folkin-font.zip'
+         fontFile: `${import.meta.env.BASE_URL}/FontFiles/PopularFontFiles/folkin-font.zip`
       },
       {
          fontname: 'Blize Queen',
          fontstyle: 'blizeQueen_font',
          numStyle: 1,
          fontCreator: '',
-         fontFile: '/FontFiles/PopularFontFiles/BlizeQueen.zip'
+         fontFile: `${import.meta.env.BASE_URL}/FontFiles/PopularFontFiles/BlizeQueen.zip`
       },
       {
          fontname: 'Cosity',
          fontstyle: 'cosity_font',
          numStyle: 1,
          fontCreator: '',
-         fontFile: '/FontFiles/PopularFontFiles/cosity.zip'
+         fontFile: `${import.meta.env.BASE_URL}/FontFiles/PopularFontFiles/cosity.zip`
       }
    ]
    const collectionFonts = [
@@ -58,35 +58,35 @@ function Fontpage(props){
          fontstyle: 'chiltofont',
          numStyle: 1,
          fontCreator: 'Novel',
-         fontFile: '../../../public/FontFiles/Collections/chiltofont-1.zip'
+         fontFile: `${import.meta.env.BASE_URL}/FontFiles/Collections/chiltofont-1.zip`
       },
       {
          fontname: 'SourceSerif',
          fontstyle: 'sourceSerif_font',
          numStyle: 2,
          fontCreator: 'Frank Grießhammer',
-         fontFile: '/FontFiles/Collections/SourceSerif.zip'
+         fontFile: `${import.meta.env.BASE_URL}/FontFiles/Collections/SourceSerif.zip`
       },
       { 
          fontname: 'Musashi',
          fontstyle: 'Musashi_font',
          numStyle: 1,
          fontCreator: '',
-         fontFile: '/FontFiles/Collections/Musashi.zip'
+         fontFile: `${import.meta.env.BASE_URL}/FontFiles/Collections/Musashi.zip`
       },
       { 
          fontname: 'Luxenage',
          fontstyle: 'luxenage_font',
          numStyle: 1,
          fontCreator: 'Skillays STD',
-         fontFile: '/FontFiles/Collections/luxenage.zip'
+         fontFile: `${import.meta.env.BASE_URL}/FontFiles/Collections/luxenage.zip`
       },
       { 
          fontname: 'Balkor',
          fontstyle: 'balkor_font',
          numStyle: 1,
          fontCreator: '',
-         fontFile: '/FontFiles/Collections/balkor.zip'
+         fontFile: `${import.meta.env.BASE_URL}/FontFiles/Collections/balkor.zip`
       }
    ]
    const popularFontsCon = () => {
