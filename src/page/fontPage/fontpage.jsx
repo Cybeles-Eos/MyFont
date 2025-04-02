@@ -1,12 +1,17 @@
 import Styles from './font.module.css'
 import fImage from '../../assets/F.png'
 import Fontbox from '../../components/fontbox/fontbox.jsx'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 import Footer from '../../components/footer/footer.jsx';
 
 function Fontpage(){
+
+   useEffect(()=>{
+      document.querySelector("body").setAttribute("data-theme", "none");
+   }, []);
+
    let [toggle, setToggle] = useState(true);
    const popularFont = [
       {

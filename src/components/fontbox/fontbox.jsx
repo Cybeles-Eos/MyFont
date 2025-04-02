@@ -10,12 +10,6 @@ function Fontbox(props){
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
-      // const a = document.createElement('a')
-      // a.href = source
-      // a.download = name
-      // document.body.appendChild(a)
-      // a.click()
-      // document.body.removeChild(a)
    }
 
    return(

@@ -1,5 +1,6 @@
 import Style from './contact.module.css'
 import cC from '../../assets/Cc.png'
+import { useEffect } from 'react'
 
 import location from '../../assets/map-pin-line.svg'
 import phone from '../../assets/phone-line.svg'
@@ -8,6 +9,9 @@ import mail from '../../assets/mail-line.svg'
 import Footer from '../../components/footer/footer'
 
 function Contact(props){
+   useEffect(()=>{
+      document.querySelector("body").setAttribute("data-theme", "none");
+   }, []);
 
    const infosPics = [
       {

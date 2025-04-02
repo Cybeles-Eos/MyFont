@@ -1,9 +1,11 @@
 import Style from './about.module.css'
 import aA from '../../assets/Aa.png'
 import Footer from '../../components/footer/footer';
-
+import { useEffect } from 'react';
 function About(props){
-
+   useEffect(()=>{
+      document.querySelector("body").setAttribute("data-theme", "none");
+   }, []);
    let about_texts = [
       {
          title: "With MyFont, you can:",
