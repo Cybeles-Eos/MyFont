@@ -11,7 +11,7 @@ import Fontpage from './page/fontPage/fontpage.jsx'
 
 //Components
 import Nav from './components/header/nav.jsx'
-
+import ScrollToTop from './scrollTop.jsx'
 //Styles
 import './index.css'
 
@@ -20,7 +20,9 @@ function Main() {
   return (
     //  basename='/YourFont'
     <HashRouter>
+      <ScrollToTop />
       <Routes>
+        
         <Route path='/' element={<Nav />}>
           <Route index element={<Home />}/>
           <Route path='/about' element={<About />}/>
